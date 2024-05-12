@@ -1,0 +1,40 @@
+name: Formulaire pour les bugs
+description: Utiliser ce template pour toute demande et decouverte de bugs.
+title: "Bug : "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de remplir ce formulaire
+  - type: textarea
+    id: Description
+    attributes:
+      label: Description
+      description: Donner une description claire et précise du bug
+      value: "Un bug est apparu !"
+    validations:
+      required: true
+  - type: textarea
+    id: Etapes
+    attributes:
+      label: Etapes à reproduire
+      description: Dites nous comment reproduire le bug
+      value: "1 - etape 1 ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: plateformes
+    attributes:
+      label: Sur qu'elle plateforme le bug est apparu ?
+      multiple: true
+      options:
+        - Ordinateur
+        - Mobile
+        - Ipad
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Rentrer ici tout les messsages d'erruer, d'informations ou logs qui pourrait etre interressant.
+      render: shell

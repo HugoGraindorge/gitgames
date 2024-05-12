@@ -1,0 +1,25 @@
+name: Formulaire pour les améliorations
+description: Utiliser ce template pour toute demande de fonctionalités ou d'améliorations.
+title: "Feature : "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de remplir ce formulaire
+  - type: textarea
+    id: Description
+    attributes:
+      label: Description
+      description: Donner une description claire de la demande
+      value: "Ma demande !"
+    validations:
+      required: true
+  - type: textarea
+    id: Suggestions
+    attributes:
+      label: Suggestions
+      description: Si vous voulez apporter des suggestions
+      value: "Mes suggestions !"
+    validations:
+      required: false
